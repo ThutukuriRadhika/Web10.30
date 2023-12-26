@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">java</h1>
+    <h1 id="heading1">angular js</h1>
+    <h1 id="heading2">react js</h1>
+    <h1 id="heading3">node js</h1>
+    <button onclick="ch()">apply border</button>
+    <button onclick="st()">style</button>
+    <button onclick="reld()">reset</button>
+   <script>
+       //var x=document.getElementsByTagName("h1")
+       //console.log(x)
+       //the above code targets all the elements present inside the DOM tree.
+       function ch()
+       {
+        var x=document.getElementsByTagName("h1")
+        for (let i =0; i < x.length; i++)
+        {
+            x[i].style.border="2px solid green"
+        }
+    }
+       function st()
+       {
+        var x1=document.getElementById(heading1)
+        var x2=document.getElementById(heading2)
+        x1.style.fontStyle="italic"
+        x2.style.fontStyle="italic"
+     }
+     function reld()
+     {
+        location.reload()
+     }
+   </script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(true)
+        {
+            x=100;//global variable
+            var x1=1000;//local variable
+            let x2=10000;//local variable
+            const x3=100000;//local variable
+            document.write("inside the if block"+x+"<br>")
+            document.write("inside the if block"+x1+"<br>")
+            document.write("inside the if block"+x2+"<br>")
+            document.write("inside the if block"+x3+"<br>")
+        }
+        document.write(x+"<br>")//100
+        document.write(x1+"<br>")//1000
+        document.write(x2+"<br>")//x2 is not defined error
+        document.write(x3+"<br>")//x3 is not defined error
+
+    </script>
+</body>
+</html>

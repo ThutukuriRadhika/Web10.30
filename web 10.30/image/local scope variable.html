@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display()
+        {
+            x=100;
+            var x1=1000;
+            let x2=10000;
+            const x3=100000;
+            document.write("inside the function"+x+"<br>")
+            document.write("inside the function"+x1+"<br>")
+            document.write("inside the function"+x2+"<br>")
+            document.write("inside the function"+x3+"<br>")
+        }
+        display()//function call
+        document.write(x+"<br>")//100
+        document.write(x1+"<br>")//x1 is not defined error
+        document.write(x2+"<br>")//x2 is not defined error
+        document.write(x3+"<br>")//x3 is not defined error
+    </script>
+</body>
+</html>

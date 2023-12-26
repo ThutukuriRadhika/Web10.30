@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>addeventlistener</h1>
+    <button id="btn1">Click-me!</button> <br><br>
+    <button id="btn2">Click-me!</button>
+    <script>
+        //addEventListner("Event",event-handler-function)
+        var button1=document.getElementById("btn1");
+        var button2=document.getElementById("btn2");
+        button1.addEventListener("click",display1);
+        button2.addEventListener("click",display2);
+        function display1()
+        {
+            alert("addEventListner()-1")
+        }
+        function display2()
+        {
+            alert("addEventListner()-2") 
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <ul id="ul">
+        <li>Java</li>
+        <li>Java-script</li>
+        <li>React-js</li>
+        <li>Hibernet</li>
+        <li>Spring</li>
+
+    </ul>
+   </div>
+   <div>
+
+   </div> 
+   <script>
+    var ul=document.getElementById("ul");
+    var div=document.getElementsByTagName("div");
+    var cloneUl=ul.cloneNode(true);
+    div[1].appendChild(cloneUl);
+    console.log(cloneUl);
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    var successcallback=position=>console.log(position)
+    var errorcallback=position=>console.log(position)
+    navigator.geolocation.getCurrentPosition(successcallback,errorcallback)
+ </script>   
+</body>
+</html>
